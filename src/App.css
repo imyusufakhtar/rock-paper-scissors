@@ -1,0 +1,123 @@
+body {
+  background-color: #282c34;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* width: 100%; */
+}
+
+.App {
+  text-align: center;
+  background-color: #3b3f47;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  max-width: 100%;
+  /* max-width: 550px; */
+}
+
+.App h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #61dafb;
+}
+
+.game-container {
+  margin: 20px 0;
+}
+
+.choices button {
+  margin: 10px 5px;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  color: #282c34;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 23.151%;
+}
+
+.choices button:hover {
+  background-color: #21a1f1;
+}
+
+.choices .resetBtm {
+  background: white;
+  color: #282c34;
+  font-weight: bold;
+}
+
+.results {
+  margin-top: 30px;
+  background-color: #444950;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.results p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.results h3 {
+  font-size: 1.5rem;
+  color: #61dafb;
+}
+
+.scoreboard {
+  margin-top: 30px;
+  background-color: #444950;
+  /* padding: 20px; */
+  border-radius: 10px;
+  font-size: 1.2rem;
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.scoreboard p {
+  margin: 0;
+  font-weight: bold;
+  padding: 20px 0;
+  min-width: 33.33%;
+  
+}
+
+.scoreboard p:nth-child(1), .scoreboard p:nth-child(2){
+  border-right: 3px solid #282c34;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+
+  .App h1 {
+    font-size:25px;
+  }
+
+  .choices button {
+    min-width: 29%;
+    margin: 5px;
+    font-size: 20px;
+  }
+
+  .results p, .results h3, .scoreboard p {
+    font-size: 1rem;
+  }
+
+  .scoreboard p:nth-child(1), .scoreboard p:nth-child(2){
+    border-right: 2px solid #282c34;
+  }
+
+  .scoreboard p {
+    margin-bottom: 0px;
+    /* border-right: 2px solid red; */
+  }
+}
